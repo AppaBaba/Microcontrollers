@@ -45,3 +45,13 @@ DispOnTerm::txtcolor(byte at, byte fg, byte bg)
   Serial.print(bg);
   Serial.print("m");
 }
+
+void DispOnTerm::info()
+{
+  curpos(15,20);
+  txtcolor(1, 34, 40);
+  Serial.print("You are using the Development Libary TermText");
+  curpos(20,21);
+  txtcolor(1, 32, 40);
+  Serial.print("Created by Darell J LeGare");
+}

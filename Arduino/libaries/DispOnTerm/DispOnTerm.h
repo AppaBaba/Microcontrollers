@@ -24,6 +24,7 @@ class DispOnTerm
     void home();
     curpos(byte row, byte col);
     txtcolor(byte at, byte fg, byte bg);
+    void info();
   
 };
 
