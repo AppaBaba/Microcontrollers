@@ -22,13 +22,7 @@ void setup()
   term.clscn();
   term.txtcolor(myat, myfg, mybg);
   Serial.println("Analog0 Analog1 Analog2 Analog3 Analog4 Analog5");
-  term.curpos(15,20);
-  term.txtcolor(1, 34, 40);
-  Serial.print("You are using the Release Libary DispOnTerm");
-  term.curpos(20,21);
-  term.txtcolor(1, 32, 40);
-  Serial.print("Created by Darell J LeGare");
-
+  term.info();
 }
 
 void loop()
