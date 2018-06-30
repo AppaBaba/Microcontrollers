@@ -4,7 +4,7 @@
   Released into the public domain.
 */
 
-#include <DispOnTerm.h>
+#include "DispOnTerm.h"
 
 byte myrow;
 byte mycol;
@@ -40,7 +40,7 @@ enum mybg {
   bgwht  = 47
 };
 
-DispOnTerm ColorTerm(13);
+DispOnTerm ColorTerm("Appa Software");
 
 
 void setup()
@@ -56,7 +56,7 @@ void loop()
   for (byte bgc = bgblk; bgc <= bgwht; bgc++) {
   for (byte fgc = fgred; fgc <= fgwht; fgc++) {
   ColorTerm.txtcolor(bld, fgc, bgc);
-  Serial.print("Hi there");
+  Serial.print("Hi there ");
   }
   Serial.println();
   }

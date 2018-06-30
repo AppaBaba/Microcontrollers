@@ -8,12 +8,12 @@
 
 byte myrow;
 byte mycol;
-byte myat = 1;
-byte myfg = 33;
-byte mybg = 40;
+byte myat;
+byte myfg;
+byte mybg;
 int ana = 0;
 
-DispOnTerm term(13);
+DispOnTerm term("Appa Software");
 
 
 void setup()
