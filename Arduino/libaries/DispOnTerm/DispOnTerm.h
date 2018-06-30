@@ -13,13 +13,13 @@ class DispOnTerm
   private:
     byte row;
     byte col;
-    int pin;
+    String pin;
     byte at;
     byte fg;
     byte bg;
     
   public:
-    DispOnTerm(int p);
+    DispOnTerm(String p);
     void clscn();
     void home();
     curpos(byte row, byte col);

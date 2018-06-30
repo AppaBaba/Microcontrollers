@@ -7,7 +7,7 @@
 #include "Arduino.h"
 #include "DispOnTerm.h"
 
-DispOnTerm::DispOnTerm(int p)
+DispOnTerm::DispOnTerm(String p)
 {
   pin = p;
 }
@@ -50,8 +50,11 @@ void DispOnTerm::info()
 {
   curpos(15,20);
   txtcolor(1, 34, 40);
-  Serial.print("You are using the Development Libary TermText");
+  Serial.print("You are using the Release Libary DispOnTerm");
   curpos(20,21);
   txtcolor(1, 32, 40);
   Serial.print("Created by Darell J LeGare");
+  curpos(22,25);
+  txtcolor(1, 36, 40);
+  Serial.print(pin);
 }
