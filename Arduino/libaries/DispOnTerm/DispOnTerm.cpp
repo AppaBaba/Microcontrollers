@@ -46,6 +46,22 @@ DispOnTerm::txtcolor(byte at, byte fg, byte bg)
   Serial.print("m");
 }
 
+DispOnTerm::setfgc(byte mfg)
+{
+  Serial.write(27);
+  Serial.print("[38;5;");
+  Serial.print(mfg);
+  Serial.print("m");
+}
+
+DispOnTerm::setbgc(byte mbg)
+{
+  Serial.write(27);
+  Serial.print("[48;5;");
+  Serial.print(mbg);
+  Serial.print("m");
+}
+
 void DispOnTerm::info()
 {
   curpos(15,20);

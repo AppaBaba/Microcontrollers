@@ -17,6 +17,8 @@ class DispOnTerm
     byte at;
     byte fg;
     byte bg;
+    byte mfg;
+    byte mbg;
     
   public:
     DispOnTerm(String p);
@@ -24,6 +26,8 @@ class DispOnTerm
     void home();
     curpos(byte row, byte col);
     txtcolor(byte at, byte fg, byte bg);
+    setfgc(byte mfg);
+    setbgc(byte mbg);
     void info();
   
 };
