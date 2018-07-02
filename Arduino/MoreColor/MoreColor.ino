@@ -19,14 +19,27 @@ void setup()
 void loop()
 {
   ColorTerm.home();
+  byte sbgc = 0;
+  byte lbgc = 21;
+  byte sfgc = 0;
+  byte lfgc = 60;
   
-  for (byte bgc = 50; bgc <= 72; bgc++) {
-    for (byte fgc = 0; fgc <= 39; fgc++) {
-      ColorTerm.setfgc(fgc);
+  for (int delta = 0; delta <= 5; delta++) {
+    for (byte bgc = sbgc; bgc <= lbgc; bgc++) {
+      char mychar = 65;
       ColorTerm.setbgc(bgc);
-      Serial.print("Hi");
+      for (byte fgc = sfgc; fgc <= lfgc; fgc++) {
+        ColorTerm.setfgc(fgc);
+        Serial.print(mychar);
+        mychar = mychar + 1;
       }
       Serial.println();
-      }
-      delay(300);
+    }
+    delay(300);
+    ColorTerm.home();
+    sfgc = sfgc + 16;
+    lfgc = lfgc + 16;
+    sbgc = sbgc + 22;
+    lbgc = lbgc + 22;
+  }        
 }
