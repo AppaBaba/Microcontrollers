@@ -1,9 +1,9 @@
 /*
   echo -  used to send byte numbers to Arduino
   and sent char byte back to serial terminal.
-  Arduino. Works with Arduino Serial Monitor.
-  Also works with terminal emulators without
-  hitting enter or send.
+  Works with Arduino Serial Monitor. Also works
+  with terminal emulators without hitting enter 
+  or send.
   
   Created by Darell J LeGare, July 14, 2018.
   Released into the public domain.
