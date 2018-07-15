@@ -1,3 +1,11 @@
+/*
+  cmdString -  Used to send string commands to
+  Arduino. Works with Arduino Serial Monitor.
+  
+  Created by Darell J LeGare, July 14, 2018.
+  Released into the public domain.
+*/
+
 byte iByte;
 String cmdString = "";
 
