@@ -1,6 +1,6 @@
 /*
-  echo -  used to read key byte numbers and sent
-  char byte to serial terminal.
+  echo -  used to send byte numbers to Arduino
+  and sent char byte back to serial terminal.
   Arduino. Works with Arduino Serial Monitor.
   Also works with terminal emulators without
   hitting enter or send.
