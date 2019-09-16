@@ -1,6 +1,6 @@
 /*
   TermTxt.cpp - Library for Terminals.
-  Created by Darell J LeGare, Junw 26, 2018.
+  Created by Darell J LeGare, June 26, 2018.
   Released into the public domain.
 */
 

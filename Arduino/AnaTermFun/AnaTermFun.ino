@@ -4,7 +4,7 @@
   functions out before adding them to an Arduino
   Libary.
   
-  Created by Darell J LeGare, Junw 26, 2018.
+  Created by Darell J LeGare, June 26, 2018.
   Released into the public domain.
 */
 
@@ -75,4 +75,3 @@ byte txtcolor(byte at, byte fg, byte bg)
   Serial.print(bg);
   Serial.print("m");
 }
-
