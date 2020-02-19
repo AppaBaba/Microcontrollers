@@ -2,7 +2,7 @@
 ; Mul2Bytes.asm
 ;
 ; Created: 7/10/2019 11:36:11 PM
-; Author : darel
+; Author : Appa
 ;
 
 .DEF  PLB = R0           ;Product low-byte     
