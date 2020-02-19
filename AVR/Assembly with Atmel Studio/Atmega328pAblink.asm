@@ -8,12 +8,12 @@
 
 main:
   sbi 0x04, 5       ; PORTB5 output
-MainLoop:            ; main loop begin
+MainLoop:           ; main loop begin
   sbi 0x05, 5       ; PORTB5 high
   call OneSecDelay  ; delay 1s
   cbi 0x05, 5       ; 5 PORTB5 low
   call OneSecDelay  ; delay 1s
-  rjmp  MainLoop        ; main loop
+  rjmp  MainLoop    ; main loop
 
 OneSecDelay:        ; One Second delay subroutine
                     ; setup regs for counters
