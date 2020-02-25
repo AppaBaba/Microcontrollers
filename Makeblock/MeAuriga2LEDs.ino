@@ -1,13 +1,11 @@
 
 int LED00 = 0; //Blue LED
 int LED01  = 1; // Red LED
-int LED13 = 13; // Normal onboard blink LED Pin 13
 
 void setup()
 {
   pinMode( LED00, OUTPUT);
   pinMode( LED01, OUTPUT);
-  pinMode( LED13, OUTPUT);
 }
 
 void loop()
