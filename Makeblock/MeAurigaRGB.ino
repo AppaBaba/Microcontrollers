@@ -1,5 +1,8 @@
-// Program MeAurigaRGB for Makeblock Auriga
-// The Makeblock Lib for Arduino is used
+// Program MeAurigaRGB for Makeblock Auriga.
+// Auriga is like an Arduino Mega with onboard
+// modules.The Makeblock Lib for Arduino IDE 
+// is used.
+
 //Red, Blue, Green LEDs circles the ring
 
 // Programmed by Darell J LeGare 

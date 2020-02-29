@@ -1,5 +1,8 @@
-// Program MeCoreRGB for Makeblock mCore
-// The Makeblock Lib for Arduino is used
+// Program MeCoreRGB for Makeblock mCore.
+// mCore is like an Arduino Uno with onboard
+// modules.The Makeblock Lib for Arduino IDE.
+// is used.
+
 //Red, Blue, Green LEDs right to left
 
 // Programmed by Darell J LeGare 
