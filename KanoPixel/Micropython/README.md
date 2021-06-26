@@ -2,12 +2,12 @@ Micropython on Kano Pixel
 
 1. Install esptool in python, I used python 3.9:
 
-  pip install esptool
+a. pip install esptool
 
 2. Erase Kano Pixes flash:
 
-  esptool.py -p com6 erase_flash
+a. esptool.py -p com6 erase_flash
 
 3. Flash micropython newest stable version:
 
-  esptool.py -p com6 write_flash esp32micropython.bin
+a. esptool.py -p com6 write_flash esp32micropython.bin
