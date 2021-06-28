@@ -4,4 +4,4 @@ a. pip install esptool
 2. Erase Kano Pixes flash
 a. esptool.py -p com6 erase_flash
 3. Flash micropython newest stable version
-a. esptool.py -p com6 write_flash esp32micropython.bin
+a. esptool.py -p com6 write_flash 0x1000 esp32micropython.bin
