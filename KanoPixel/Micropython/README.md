@@ -5,3 +5,6 @@ Kano Pixel with Micropython
 > esptool.py -p com6 erase_flash
 3. Flash micropython newest stable version
 > esptool.py -p com6 write_flash 0x1000 esp32micropython.bin
+
+OR Make it easyer
+1. Just use the Kano Pixel Flash Tool
