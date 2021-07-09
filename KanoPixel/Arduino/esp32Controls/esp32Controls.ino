@@ -39,7 +39,6 @@ void loop() {
   for (int r=0; r<mx; r++) {
   pixels.setPixelColor(random(NumOfLeds), pixels.Color(red, green, blue));
   pixels.show();
-  red = random(50);
   buttonAState = digitalRead(buttonPinA);
   buttonBState = digitalRead(buttonPinB);
   UpState = digitalRead(UpPin);
@@ -56,6 +55,10 @@ void loop() {
     mx = 128;
   else if (DownState == LOW)
     mx = 63;
+  else if (LeftState == LOW)
+    red = random(25);
+  else if (RightState == LOW)
+    red = random(75);
   else
     mx  = 10;  
   }
