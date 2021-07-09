@@ -1,0 +1,62 @@
+#include <Adafruit_NeoPixel.h>
+#define npPin 4
+#define NumOfLeds 128
+const int buttonPinA = 23;
+const int buttonPinB = 18;
+const int UpPin = 35;
+const int DownPin = 34;
+const int LeftPin = 26;
+const int RightPin = 25;
+const int ClickPin = 27;
+int buttonAState = 0;
+int buttonBState = 0;
+int UpState = 0;
+int DownState = 0;
+int LeftState = 0;
+int RightState = 0;
+int ClickState = 0;
+int NothingState = 0;
+int red = 50;
+int green = 0;
+int blue = 0;
+int mx = 10;
+Adafruit_NeoPixel pixels(NumOfLeds, npPin, NEO_GRB + NEO_KHZ800);
+
+void setup() {
+  Serial.begin(115200);
+  pixels.begin();
+  pinMode(buttonPinA, INPUT);
+  pinMode(buttonPinB, INPUT);
+  pinMode(UpPin, INPUT);
+  pinMode(DownPin, INPUT);
+  pinMode(LeftPin, INPUT);
+  pinMode(RightPin, INPUT);
+  pinMode(ClickPin, INPUT);
+  }
+
+void loop() {
+  pixels.clear();
+  for (int r=0; r<mx; r++) {
+  pixels.setPixelColor(random(NumOfLeds), pixels.Color(red, green, blue));
+  pixels.show();
+  red = random(50);
+  buttonAState = digitalRead(buttonPinA);
+  buttonBState = digitalRead(buttonPinB);
+  UpState = digitalRead(UpPin);
+  DownState = digitalRead(DownPin);
+  LeftState = digitalRead(LeftPin);
+  RightState = digitalRead(RightPin);
+  ClickState = digitalRead(ClickPin);
+  
+  if (buttonAState == LOW)
+    green = random(50);
+  else if (buttonBState == LOW)
+    blue = random(50);
+  else if (UpState == LOW)
+    mx = 128;
+  else if (DownState == LOW)
+    mx = 63;
+  else
+    mx  = 10;  
+  }
+}
