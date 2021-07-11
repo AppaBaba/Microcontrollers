@@ -8,6 +8,7 @@ const int DownPin = 34;
 const int LeftPin = 26;
 const int RightPin = 25;
 const int ClickPin = 27;
+const int DialPin = 36;
 int buttonAState = 0;
 int buttonBState = 0;
 int UpState = 0;
@@ -16,6 +17,7 @@ int LeftState = 0;
 int RightState = 0;
 int ClickState = 0;
 int NothingState = 0;
+int DialState = 0;
 int red = 50;
 int green = 0;
 int blue = 0;
@@ -46,19 +48,24 @@ void loop() {
   LeftState = digitalRead(LeftPin);
   RightState = digitalRead(RightPin);
   ClickState = digitalRead(ClickPin);
+  DialState = analogRead(DialPin);
   
   if (buttonAState == LOW)
     green = random(50);
   else if (buttonBState == LOW)
     blue = random(50);
   else if (UpState == LOW)
-    mx = 128;
+    red = random(50);
   else if (DownState == LOW)
-    mx = 63;
+    red = random(25);
   else if (LeftState == LOW)
     red = random(25);
   else if (RightState == LOW)
     red = random(75);
+  else if (DialState < 2000)
+    mx = 63;
+  else if (DialState > 3000)
+    mx = 128;
   else
     mx  = 10;  
   }
