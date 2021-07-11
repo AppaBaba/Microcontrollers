@@ -63,10 +63,10 @@ void loop() {
   else if (RightState == LOW)
     red = random(75);
   else if (DialState < 2000)
-    mx = 63;
+    mx = 10;
   else if (DialState > 3000)
     mx = 128;
   else
-    mx  = 10;  
+    mx  = 63;  
   }
 }
