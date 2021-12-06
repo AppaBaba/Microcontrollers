@@ -1,0 +1,17 @@
+' {$STAMP BS2}
+' {$PBASIC 2.5}
+LED  PIN     5 
+
+LedOn    CON     1
+LedOff   CON     0
+
+Setup:
+  OUTPUT LED
+
+Main:
+  DO
+    LED = LedOn
+    PAUSE 1000
+    LED = LedOff
+    PAUSE 1000
+  LOOP
