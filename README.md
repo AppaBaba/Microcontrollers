@@ -6,3 +6,7 @@ I once worked on an HP1000 minicomputer used for Automatic Test Equipment (ATE).
 When I started doing stuff with microcontrollers, most of it was opensource. This make things simpler to startup. There is a lot out there. I started with a Beaglebone Black because it seemed a lot more professional. When I got my first Raspberry Pi, I thought more fun to play with. I then got a few Arduino’s just because that’s what started the opensource microcontroller stuff. This is normal for me to start backwards. This is how I started with electronics, intergraded circuits, transistors, and then tubes.
 
 I started using an Arduino like kit call Microduino. I use it because it is like a small hardware software development system. It has small little units call cookies that can be stacked on top of each other. Microduino uses magnets to keep it together and spring like fingers to make electrical contact. Very easy to add remove components.
+
+Before all of this I would have to give a lot of credit to LEGO Mindstoms for the NXT and EV3 for many hours of fun.
+Also I spent may hours with th Picokriket. So I have a lot of stuff on my server about these contollers. If time perments,
+I will put some of it on the Miccontroler GitHub.
