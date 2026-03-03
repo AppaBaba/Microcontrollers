@@ -9,4 +9,4 @@ I started using an Arduino like kit call Microduino. I use it because it is like
 
 Before all of this I would have to give a lot of credit to LEGO Mindstoms for the NXT and EV3 for many hours of fun.
 Also I spent may hours with th Picokriket. So I have a lot of stuff on my server about these contollers. If time perments,
-I will put some of it on the Miccontroler GitHub.
+I will put some of it on the Microcontroller GitHub.
