@@ -12,6 +12,6 @@ value = 0
 
 while True:
     for i in range(4):
-        BoardLeds[i].value((value >> i) & 1)
+        BoardLeds[i].value((value >> i) & 1)                                                     
     value = (value + 1) % 16
     sleep(0.5)
