@@ -41,11 +41,11 @@ V3 = [[0, 0, 1, 0, 1, 1, 0, 0],
 while True:
     for r in range(4):
         for c in range(8):
-            a = V1[r][c]
-            b = V2[r][c]
-            d = V3[r][c]
-            RegA[c].value(a)
-            RegB[c].value(b)
-            RegC[c].value(d)
+            va = V1[r][c]
+            vb = V2[r][c]
+            vc = V3[r][c]
+            RegA[c].value(va)
+            RegB[c].value(vb)
+            RegC[c].value(vc)
             time.sleep(.5)
     

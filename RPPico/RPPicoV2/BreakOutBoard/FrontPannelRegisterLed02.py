@@ -40,13 +40,13 @@ V3[0][2] = 1; V3[1][2] = 0; V3[2][2] = 1; V3[3][2] = 0; V3[4][2] = 0; V3[5][2] =
 V3[0][3] = 1; V3[1][3] = 1; V3[2][3] = 0; V3[3][3] = 1; V3[4][3] = 1; V3[5][3] = 0; V3[6][3] = 1; V3[7][3] = 0
 
 while True:
-    for i in range(8):
-        for j in range(4):
-            a = V1[i][j]
-            b = V2[i][j]
-            c = V3[i][j]
-            RegA[i].value(a)
-            RegB[i].value(b)
-            RegC[i].value(c)
+    for r in range(8):
+        for c in range(4):
+            va = V1[r][c]
+            vb = V2[r][c]
+            vc = V3[r][c]
+            RegA[c].value(va)
+            RegB[c].value(vb)
+            RegC[c].value(vc)
             time.sleep(.5)
     
