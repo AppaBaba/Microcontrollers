@@ -7,6 +7,6 @@ When I started doing stuff with microcontrollers, most of it was opensource. Thi
 
 I started using an Arduino like kit call Microduino. I use it because it is like a small hardware software development system. It has small little units call cookies that can be stacked on top of each other. Microduino uses magnets to keep it together and spring like fingers to make electrical contact. Very easy to add remove components.
 
-
+<img width="4032" height="3024" alt="20180107_011843279_iOS" src="https://github.com/user-attachments/assets/a520c5b4-bbae-42d8-9ac3-76d4e47738f7" />
 
 Before all of this I would have to give a lot of credit to LEGO Mindstorms for the NXT and EV3 for many hours of fun. Also, I spent many hours with PicoCriket. So, I have a lot of stuff on my server about these controllers. If time permits, I will put some of it on the Microcontroller GitHub.
